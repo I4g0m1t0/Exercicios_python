@@ -1,6 +1,11 @@
 import math
 
-catop = float(input('Informe o valor do cateto oposto: '))
+'''catop = float(input('Informe o valor do cateto oposto: '))
 catad = float(input('Informe o valor do cateto adjacente: '))
 hipot = (math.pow(catop, 2)) + (math.pow(catad, 2))
-print('O valor da hipotenusa é: {}'.format(math.sqrt(hipot)))
+print('O valor da hipotenusa é: {}'.format(math.sqrt(hipot)))'''
+
+catop = float(input('Informe o valor do cateto oposto: '))
+catad = float(input('Informe o valor do cateto adjacente: '))
+hipot = math.hypot(catop, catad)
+print('O valor da hipotenusa é: {}'.format(hipot))
