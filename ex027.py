@@ -1,0 +1,5 @@
+nome = input('Digite o seu nome completo: ').strip()
+pesp = nome.find(' ')
+uesp = nome.rfind(' ')
+print('Seu primeiro nome é: {}'.format(nome[:pesp+1]))
+print('Seu último nome é: {}'.format(nome[uesp+1:]))
